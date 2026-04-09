@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "delayed-damage",
+  "version": "1.0.0",
+  "name": "Delayed Damage",
+  "description": "All damage is applied over time instead of instantly. Healing can counteract pending damage for clutch saves.",
+  "authors": ["ali77sina"],
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.delayeddamage.DelayedDamageMod"]
+  },
+  "mixins": [
+    "delayed-damage.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
